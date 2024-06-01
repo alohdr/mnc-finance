@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "d19eb99b-5b9b-4a4b-ab4e-5c960b072985",
+		"name": "MNC FINANCE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18814481",
+		"_collection_link": "https://orange-meadow-984259.postman.co/workspace/My-Workspace~7edb150f-5536-4be4-890d-3de65a7bb8d5/collection/18814481-d19eb99b-5b9b-4a4b-ab4e-5c960b072985?action=share&source=collection_link&creator=18814481"
+	},
+	"item": [
+		{
+			"name": "HELLO GO DEVELOPERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PALINDROME",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/palindrome-check?text=saya",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"palindrome-check"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "saya"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LANGUAGE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"language\": \"C\",\n    \"appeared\": 1972,\n    \"created\": [\n        \"Dennis Ritchie\"\n    ],\n    \"functional\": true,\n    \"object-oriented\": false,\n    \"relation\": {\n        \"influenced-by\": [\n            \"B\",\n            \"ALGOL 68\",\n            \"Assembly\",\n            \"FORTRAN\"\n        ],\n        \"influences\": [\n            \"C++\",\n            \"Objective-C\",\n            \"C#\",\n            \"Java\",\n            \"JavaScript\",\n            \"PHP\",\n            \"Go\"\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/language",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD LANGUAGE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"language\": \"Python\",\n    \"appeared\": 1991,\n    \"created\": [\n        \"Guido van Rossum\"\n    ],\n    \"functional\": true,\n    \"object-oriented\": true,\n    \"relation\": {\n        \"influenced-by\": [\n            \"C\",\n            \"C++\",\n            \"ALGOL 68\",\n            \"Ada\",\n            \"Haskell\",\n            \"Java\",\n            \"Lisp\"\n        ],\n        \"influences\": [\n            \"Go\",\n            \"CoffeeScript\",\n            \"JavaScript\",\n            \"Julia\",\n            \"Ruby\",\n            \"Swift\"\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/language",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE LANGUAGE",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"relation\": {\n        \"influences\": [\n            \"C++\",\n            \"Go\"\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/language/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DETAIL LANGUAGE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/language/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE LANGUAGE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/language/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"language",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET LIST LANGUAGE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/languages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"languages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
