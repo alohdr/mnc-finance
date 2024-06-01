@@ -32,11 +32,8 @@ func main() {
 	fmt.Scanln(&totalBelanja)
 
 	var uangDibayar int
-	fmt.Print("Total belanja seorang customer: Rp ")
+	fmt.Print("Pembeli membayar: Rp ")
 	fmt.Scanln(&uangDibayar)
-
-	fmt.Println("inputan = ", totalBelanja)
-	fmt.Println("inputan = ", uangDibayar)
 
 	kembalian, pecahan, valid := calculate(totalBelanja, uangDibayar)
 	if !valid {
